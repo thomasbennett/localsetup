@@ -1,5 +1,4 @@
 " PHP-specific vim commands
-" Bill Israel <bill.israel@gmail.com>
 
 " Check syntax
 :setlocal makeprg=php\ -l\ %

@@ -1,5 +1,4 @@
-dotfiles
-========
+localsetup
+=========
 
-These are my dotfiles. There are many like them, but these are mine.
-
+Quick access to local setup. Thanks to @epochblue

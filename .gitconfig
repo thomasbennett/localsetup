@@ -1,9 +1,10 @@
 [user]
-    name = Bill Israel
-    email = bill.israel@gmail.com
+    name = Thomas Bennett
+    email = thomasgbennett@gmail.com
 
 [color]
-    diff = auto
+    ;diff = auto
+    ui = true
 
 [alias]
     co = checkout

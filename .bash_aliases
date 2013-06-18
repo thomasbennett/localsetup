@@ -1,6 +1,3 @@
-# .bash_aliases
-# Bill Israel [http://cubicle17.com/]
-
 # ls
 alias ls="ls -G"
 alias l="ls -Ahl"
@@ -24,6 +21,8 @@ alias reload="source ~/.bashrc"
 alias t="tree"
 alias fixopenwith="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user;killall Finder"
 alias utime="date +%s"
+
+alias ec2="ssh thomas.bennett@50.19.74.207"
 
 # `.. 3` will `cd ../../..`
 function ..() {
