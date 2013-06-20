@@ -1,5 +1,4 @@
 # .bashrc
-# Bill Israel [http://cubicle17.com/]
 
 # return if not running interactively
 [ -z "$PS1" ] && return
@@ -33,11 +32,11 @@ fi
 # Default prompt
 #PS1='\e[0;31m]\w \$ '
 #PS1="\e[0;31m[\w]\$"
-export PS1="\e[0;31m[\w]\$ \e[m"
+#export PS1="\e[0;31m[\w]\$ \e[m"
 
 # Use a git-aware prompt if one is available
 if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
-	PS1='\w $(__git_ps1 "(%s) ")\$ '
+	PS1='\e[0;31m[\w] \e[m $(__git_ps1 "(%s) ")\$ '
 fi
 
 # ls colors
