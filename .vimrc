@@ -31,6 +31,7 @@ set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%)
 if has('gui_running') 
   set guioptions-=T          " remove the toolbar
   set lines=999
+  set transparency=10
   :color molokai
 
   if has("mac")
@@ -43,7 +44,6 @@ if has('gui_running')
   endif
 
   set cursorline
-
 endif
 
 :color molokai
@@ -69,16 +69,14 @@ set showcmd
 set showmatch
 set autoindent
 set softtabstop=4
-set expandtab
 set tabstop=4
 set shiftwidth=4
+set expandtab
 set undolevels=500
 set showtabline=18
 "set mouse=r
 set showmode
 syntax on
-
-set transparency=10
 
 " LESS
 nnoremap ,m :w <BAR> !lessc % > %:t:r.css<CR><space>
@@ -107,6 +105,7 @@ map ,sbar :!./symfony doctrine:build --all --and-load<CR>
 
 " Various shortcuts for working with tabs
 map ,t :tabnew  
+map ,c ,t<CR>:CommandT<CR>
 map ,d :tabp<CR> 
 map ,f :tabn<CR>
 
