@@ -31,13 +31,14 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 # Default prompt
-PS1='\w \$ '
+#PS1='\e[0;31m]\w \$ '
+#PS1="\e[0;31m[\w]\$"
+export PS1="\e[0;31m[\w]\$ \e[m"
 
 # Use a git-aware prompt if one is available
 if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
 	PS1='\w $(__git_ps1 "(%s) ")\$ '
 fi
-
 
 # ls colors
 # (via http://github.com/inky/dotfiles/blob/master/home/.bashrc)
