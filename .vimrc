@@ -35,7 +35,7 @@ if has('gui_running')
   :color molokai
 
   if has("mac")
-    set guifont=Monaco:h12
+    set guifont=Monaco:h14
   elseif has("unix")
     "set guifont=Monospace\ 9
     set guifont=Liberation\ Mono\ 9
