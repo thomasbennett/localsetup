@@ -33,4 +33,9 @@ brew tap homebrew/versions
 brew tap homebrew/homebrew-php
 php55
 
-Quick access to local setup. Thanks to @epochblue
+Gems List
+---------
+bundler
+capistrano
+
+# Quick access to local setup. 
